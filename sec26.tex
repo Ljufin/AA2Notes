@@ -5,5 +5,25 @@
 \usepackage{amssymb}
 \begin{document}
 
+\begin{center}
+Section 26: Homomorphisms and Factor Rings
+\end{center}
+
+\paragraph{Def:} A map $\phi$ of a ring $R$ into a ring $R'$ is a \textit{homomorphism} if $$ \phi(a+b) = \phi(a)+\phi(b)$$ and $$\phi(ab)=\phi(a)\phi(b)$$ for all elements $a,b \in R$.
+
+\paragraph{Example:} \textit{The Projection Homomorphisms:} Let $R_1, R_2, \dots, R_n$ be rings. For each $i$, the map $\pi_i:R_1 \times R_2 \times \dots \times R_n \to R_i$ defined by $\pi_i(r_1,r_2,\dots,r_n) = r_i$ is a homomorphism. This is called the "projection onto the $i$th component of $R_i$." It is very easy to see that this meets all the requirements of the homomorphism.
+
+\paragraph{}A number of key results easily transfer over from group homomorphisms.
+
+\paragraph{Thm:} Let $\phi$ be a homomorphism of a ring $R$ into a ring $R'$. The following properties hold:
+\begin{enumerate}
+\item If 0 is the additive identity in $R$, then $\phi(0) = 0'$ is the additive identity in $R'$.\\
+\item If $a\in R$, then $\phi(-a) = -\phi(a)$.\\
+\item If $S$ is a subring of $R$, then $\phi(S)$ is a subring of $R'$.\\
+\item If $S'$ is a subring of $R'$, then $\phi^{-1}(S')$ is a subring of $R$.\\
+\item If $R$ has unity 1, then $\phi(1)$ is unity for $\phi(R)$.
+\end{enumerate}
+
+
 
 \end{document}
