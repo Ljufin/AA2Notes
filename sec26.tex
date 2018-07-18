@@ -24,6 +24,48 @@ Section 26: Homomorphisms and Factor Rings
 \item If $R$ has unity 1, then $\phi(1)$ is unity for $\phi(R)$.
 \end{enumerate}
 
+\paragraph{Def:} Let a map $\phi: R \to R'$ be a ring homomorphism. The subring $$\phi^{-1}(0') = \{r \in R | \phi(r) = 0'\} $$ is the \textit{kernel} of $\phi$, denoted $Ker(\phi)$.
+
+\paragraph{Factor(Quotient) Rings:} Now that we have transferred what we know about group homomorphisms to ring homomorphisms, we can extend the concept of a factor group to get a factor ring. 
+
+\paragraph{Thm:} Let $\phi:R \to R'$ be a ring homomorphism with kernel $H$. Then the additive cosets of $H$ form a ring $R/H$ whose binary operations are defined by $$ (a+H)+(b+H) = (a+b)+Hb$$, and $$(a+H)(b+H) = (ab)+H$$.
+
+\paragraph{Note:} The map $\mu: R/H \to \phi(R)$ defined by $\mu(a+H) = \phi(a)$ is an isomorphism.
+
+\paragraph{Example:} This theorem allows us to prove that $\mathbb{Z}/n\mathbb{Z}$ is isomorphic to $\mathbb{Z}_n$.
+
+\paragraph{Thm:} Let $H$ be a subring of $R$. The multiplication of additive cosets of $H$ is well-defined if and only if $ah \in H$ and $hb \in h$ for all $a,b \in R$ and $h \in H$.
+
+\paragraph{Def:} An adative subgroup $N$ of a ring $R$ satisfying the properties:
+\begin{itemize}
+\item $aN \subseteq N$\\
+\item $Nb \subseteq N$
+\end{itemize}
+for all $a,b \in R$ is an \textit{ideal}.
+
+\paragraph{Note:} Ideals are the ring equivalent of normal subgroups.
+
+\paragraph{Example:} $n\mathbb{Z}$ is an ideal in $\mathbb{Z}$. $n\mathbb{Z}$ is a subring and $s(mn) = (nm)s = n(ms) \in n\mathbb{Z}$ for all $s \in \mathbb{Z}$. What we did was to show that both left and right cosets are a subset of $n\mathbb{Z}$
+
+\paragraph{Def:} Let $N$ be an ideal of a ring $R$. The additive cosets of $N$ form a ring $R/N$ with the binary operations by defined as $$ (a+N)+(b+N) = (a+b)+N$$ and $$(a+N)(b+N) = ab+N$$. This ring is the \textit{factor ring} of \textit{quotient ring} of $R$ by $N$.
+
+\paragraph{Thm:} Let $N$ be and ideal of a ring $R$. Then $\gamma : R \to R/N$ given by $\gamma (y) = x+N$ is a ring homomorphism with $Ker(\gamma) = N$.
+
+\paragraph{Fundamental Homomorphism Theorem:} Let $\phi:R \to R'$ be a ring homomorphism with kernel $N$. Then $\phi(R)$ is a ring, and the map $\mu: R/N \to \phi(R)$ given by $\mu(x+N)=\phi(x)$ is an isomorphism. If $\gamma:R \to R/N$ is the homomorphism given by $\gamma(x) = x+N$, then for each $x \in R$, we have $\phi(x) = \mu(\gamma(x))$.
+
+\paragraph{Note:} This theorem is basically saying that we can consider a homomorphism in two pieces. The ring is first mapped to a factor ring and then another mapping goes from the factor ring to $\phi(R)$. The book says it this way, \textit{"every ring homomorphism with domain R gives rise to a factor ring R/N, and every factor ring R/N gives rise to a homomorphism mapping R into R/N."}
+
+\paragraph{Selected Exercises:}
+
+\paragraph{1.} Describe all ring homomorphisms of $\mathbb{Z} \times \mathbb{Z}$ into $\mathbb{Z} \times \mathbb{Z}$. Note that if $\phi$ is such a homomorphism, then $\phi((1,0)) = \phi((1,0))\phi((1,0))$ and $\phi((0,1)) = \phi((0,1))\phi((0,1))$. Consider also $\phi((1,0)(0,1))$.
+
+\begin{flushleft}
+$\phi(1,0) = (1,0)$ and $\phi(0,1) = (0,1)$ or $(0,0)$
+\end{flushleft}
+
+
+
+
 
 
 \end{document}
