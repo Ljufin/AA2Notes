@@ -43,7 +43,11 @@ Section 26: Homomorphisms and Factor Rings
 \end{itemize}
 for all $a,b \in R$ is an \textit{ideal}.
 
+\paragraph{Note:} The book's notation is very confusing here. The requirements are easier to understand if they are put this way: $$\forall x \in N, \forall r \in R: \quad xr \in N, rx \in N$$(Source: Wikipedia).
+
 \paragraph{Note:} Ideals are the ring equivalent of normal subgroups.
+
+\paragraph{Note:} If $R$ is a field, then the only ideals are $\{0\}$ and $R$ itself. 0 will obviously obliterate anything that gets multiplied by it, and the entire field will contain everything. It is very easy to escape closure if you pick a smaller subring of $R$.
 
 \paragraph{Example:} $n\mathbb{Z}$ is an ideal in $\mathbb{Z}$. $n\mathbb{Z}$ is a subring and $s(mn) = (nm)s = n(ms) \in n\mathbb{Z}$ for all $s \in \mathbb{Z}$. What we did was to show that both left and right cosets are a subset of $n\mathbb{Z}$
 
@@ -57,11 +61,33 @@ for all $a,b \in R$ is an \textit{ideal}.
 
 \paragraph{Selected Exercises:}
 
-\paragraph{1.} Describe all ring homomorphisms of $\mathbb{Z} \times \mathbb{Z}$ into $\mathbb{Z} \times \mathbb{Z}$. Note that if $\phi$ is such a homomorphism, then $\phi((1,0)) = \phi((1,0))\phi((1,0))$ and $\phi((0,1)) = \phi((0,1))\phi((0,1))$. Consider also $\phi((1,0)(0,1))$.
+\paragraph{20.} Let $R$ be a commutative ring with unity of prime characteristic $P$. Show that the map $\phi_p: R \to R$ given by $\phi_p(a) = a^p$ is a homomorphism. (the \textit{Frobenius homomorphism})
 
 \begin{flushleft}
-$\phi(1,0) = (1,0)$ and $\phi(0,1) = (0,1)$ or $(0,0)$
+\textit{Proof:}\\
+$\phi_p(a+b) = (a+b)^p = a^p +b^p$\\
+The last step is true because $R$ has a prime characteristic.\\
+Therefore, $\phi_p(a+b) = \phi_p(a)+\phi_p(b)$.\\
+$\phi_p(ab) = (ab)^p = a^pb^p = \phi_p(a)\phi_p(b)$\\
+Therefore, $\phi_p$ is a homomorphism. $\blacksquare$
 \end{flushleft}
+
+\paragraph{24.} Show that a factor ring of a field is either the trivial ring of one element or is isomorphic to a field.
+
+\begin{flushleft}
+\textit{Proof:} Recall that a field only has 2 possible ideals, $\{0\}$ and $F$, the field itself. Therefore, the possible factor rings are $F/\{0\}$ and $F/F$. $F/\{0\}$ is isomorphic to $F$ and $F/F$ has a single coset that contains everything and is therefore isomorphic to $\{0\}$. $\blacksquare$
+\end{flushleft}
+
+\paragraph{30.} An element $a$ of a ring $R$ is \textit{nilpotent} if $a^n=0$ for some $n \in \mathbb{Z}^+$. Show that the collection of all nilpotent elements in a commutative ring $R$ is an ideal, the \textit{nilradical} of $R$.
+
+\begin{flushleft}
+\textit{Proof:} Let $a$ be nilpotent and let $r \in R$.\\
+$(ar)^n = (ra)^n= r^n \dot a^n = 0$\\
+Therefore, $a \cdot r$, $r c\dot a$ are nilpotent.\\
+(also need to show that the nilpotents are closed, but that takes a while)
+\end{flushleft}
+
+
 
 
 
