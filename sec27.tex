@@ -5,5 +5,52 @@
 \usepackage{amssymb}
 \begin{document}
 
+\begin{center}
+\textbf{Section 27: Prime and Maximal Ideals}
+\end{center}
+
+\paragraph{Factoids:} This section explores the connection that factor rings have to integral domains and to fields. Here are some interesting factoids:
+\begin{itemize}
+\item A factor ring of an integral domain may be a field. Example: $\mathbb{Z}/p\mathbb{Z} \simeq \mathbb{Z}$.
+\item A factor ring of a ring may be an integral domain even though the original ring is not. Example: $(\mathbb{Z} \times \mathbb{Z})/N \simeq \mathbb{Z}$ where $N = \{(0,n)|n \in \mathbb{Z}\}$.
+\item If $R$ is not even an integral domain, it is still possible for $R/N$ to be a field. Example: $\mathbb{Z}_6/\{0,3\} \simeq \mathbb{Z}_3$.
+\item A factor ring may also have a worse structure than the original ring. Example: $\mathbb{Z}$ is an integral domain, but $\mathbb{Z}/6\mathbb{Z} \simeq \mathbb{Z}_6$ is not.
+\end{itemize}
+
+\paragraph{Thm.} If $R$ is a ring with unity, and $N$ is an ideal of $R$ containing a unit, then $N=R$.
+
+\paragraph{Corollary:} A field contains no proper nontrivial ideals.
+
+\paragraph{Note:} This makes the factor rings of a field not very interesting. The factor ring will either be $\{0\}$ or the field itself.
+
+\paragraph{Def:} The \textit{maximal ideal} of a ring $R$ is an ideal $M$ different from $R$ such that there is no proper ideal $N$ of $R$ properly containing $M$.
+
+\paragraph{Thm.} Let $R$ be a commutative ring with unity. Then $M$ is a maximal ideal of $R$ if and only if $R/M$ is a field.
+
+\paragraph{Proof Sketch:} Suppose that $M$ is a maximal ideal in $R$ and that there is an element in $R/M$ that does not have a multiplicative inverse. We can then construct an ideal of $R$ that contains $M$, contradicting the original assumption. Therefore, every element in $R/M$ needs to have a multiplicative inverse and is thus a field.
+
+\paragraph{Example:} $p\mathbb{Z}$ is a maximal ideal of $\mathbb{Z}$. Therefore $\mathbb{Z}/p\mathbb{Z} \simeq \mathbb{Z}_p$ is a field.
+
+\paragraph{Corollary:} A commutative ring with unity is a field if and only if it has no proper nontrivial ideals.
+
+\paragraph{Def:} An ideal $N \neq R$ in a commutative ring $R$ is a \textit{prime ideal} if $ab \in N$ implies that either $a \in N$ or $b \in N$ for $a,b \in R$.
+
+\paragraph{Example:} $\{0\}$ is a prime ideal in any integral domain.
+
+\paragraph{Note:} Prime ideals are based on considering the zero divisors of factor rings. The definition is derived from the fact that $$ (a+N)(b+N)+N \implies a+N=N \text{ or } b+N=N$$ if we want our factor ring to be an integral domain. This is stated in  the following theorem.
+
+\paragraph{Thm.} Let $R$ be a commutative ring with unity, and let $N \neq R$ be an ideal in $R$. Then $R/N$ is an integral domain if and only if $N$ is a prime ideal in $R$.
+
+\paragraph{Corollary:} Every maximal ideal in a commutative ring with unity is a prime ideal.
+
+\paragraph{Summary:} Maximal and prime ideals are a very important concept to understand going forward. Here is a summary of the major results so far:
+\begin{enumerate}
+\item An ideal $M$ of $R$ is maximal iff $R/M$ is a field.
+\item An ideal $N$ of $R$ is prime iff $R/N$ is an integral domain.
+\item Every maximal ideal of $R$ is a prime ideal.
+\end{enumerate}
+Notice that these 3 statements form a hierarchy of ideals. Just like how a field is an integral domain with more requirements, a maximal ideal is a prime ideal with more requirements.
+
+
 
 \end{document}
