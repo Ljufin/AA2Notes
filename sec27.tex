@@ -80,8 +80,22 @@ Notice that these 3 statements form a hierarchy of ideals. Just like how a field
 \begin{flushleft}
 \textit{Proof:} Let $p(x)$ divide $r(x)s(x)$.\\
 Then $r(x)s(x)$ must be a multiple of $p(x)$ and therefore $r(x)s(x) \in \langle p(x) \rangle$.\\
-
+$\langle p(x) \rangle$ is a maximal ideal of $F[x]$ since $p(x)$ is irreducible over $F$.\\
+Therefore, $\langle p(x) \rangle$ is also a prime ideal.\\
+Hence, $r(x)s(x) \in \langle p(x) \rangle$ implies that either $r(x) \in \langle p(x) \rangle$ or $s(x) \in \langle p(x) \rangle$.\\
+This implies that either $p(x)$ divides $r(x)$ or $p(x)$ divides $s(x)$. $\blacksquare$
 \end{flushleft} 
 
+\paragraph{Selected Exercises:}
+
+\paragraph{24.} Let $R$ be a finite commutative ring with unity. Show that every prime ideal in $R$ is a maximal ideal.
+
+\paragraph{29.} Show that $N$ is a maximal ideal in a ring $R$ if and only if $R/N$ is a \textit{simple ring}, that is, it is nontrivial and has no proper nontrivial ideals. (compare with theorem 15.18)
+
+\paragraph{33.} Use the result that every ideal in $F[x]$ is principle to prove the equivalence of the following two theorems:
+\begin{enumerate}
+\item \textit{Fundamental Theorem of Algebra:} Every non constant polynomial in $\mathbb{C}[x]$ has a zero in $\mathbb{C}$.
+\item \textit{Nullstellensatz for} $\mathbb{C}[x]$: Let $f_1(x) \dots f_r(x) \in \mathbb{C}[x]$ and suppose that every $\alpha \in \mathbb{C}$ that is a zero of all $r$ of these polynomials is also a zero of a polynomial $g(x) \in \mathbb{C}[x]$. Then some power of $g(x)$ is in the smallest ideal of $\mathbb{C}[x]$ that contains the $r$ polynomials $f_1(x) \dots f_r(x)$. 
+\end{enumerate}
 
 \end{document}
