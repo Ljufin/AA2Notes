@@ -5,5 +5,22 @@
 \usepackage{amssymb}
 \begin{document}
 
+\begin{center}
+\textbf{Section 29: Introduction to Extension Fields}
+\end{center}
+
+\paragraph{Goal:} The results in this section will allow us to prove that every nonconstant polynomial has a zero.
+
+\paragraph{Def:} A field $E$ is an \textit{extension field} of a field $F$ if $F \leq E$.
+
+\paragraph{Kronecker's Theorem:} Let $F$ be a field and let $f(x)$ be a nonconstant polynomial in $F[x]$. Then there exists an extension field $E$ of $F$ and an $\alpha \in E$ such that $f(\alpha) =0$.
+
+\begin{flushleft}
+\textit{Proof:} \\
+$f(x)$ has a factorization in $F[x]$ into polynomials that are irreducible over $F$. 
+Let $p(x)$ be an irreducible polynomial in such a factorization.
+It is E.T.S that there exists an extension field of $F$ that contains a root of $p(x)$.
+We can get our required extension field by noting that, since $\langle p(x) \rangle$ is a maximal ideal in $F[x]$, $F[x]/\langle p(x) \rangle$ must be a field. To show that $F$ is a subfield of $E = F[x]/ \langle  p(x) \rangle$, we construct the following map, $\psi: F \to E$ via $$ \psi(a) = a + \langle p(x) \rangle$$ for $a \in F$. $\psi$ is 1-1 since $\psi(a) = \psi(b)$ implies that $a-b \in \langle p(x) \rangle$ and since $a,b \in F$, $a-b=0$ and $a=b$. 
+\end{flushleft}
 
 \end{document}
