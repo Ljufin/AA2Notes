@@ -38,6 +38,16 @@ $$ f(\alpha) = \alpha^2 + 1 = (x + \langle x^2 +1 \rangle)^2 +(1 + \langle x^2 +
 $$ = (x^2+1) + \langle x^2 + 1 \rangle = \langle x^2 + 1 \rangle = 0$$
 You may recognize the field $\mathbb{R}[x]/\langle x^2+1 \rangle$ as $\mathbb{C}$.
 
+\paragraph{Def:} An element $\alpha$ of an extension field $E$ of a field $F$ is \textit{algebraic} over $F$ if $f(\alpha) = 0$ for some nonzero $f(x) \in F[x]$. If $\alpha$ is not algebraic over $F$, then $\alpha$ is \textit{transcendental} over $F$.
+
+\paragraph{Example:} $i$ is algebraic over $\mathbb{Q}$, while $\pi$ and $e$ are transcendental over $\mathbb{Q}$.
+
+\paragraph{Note:} In number theory, an element of $\mathbb{C}$ that is algebraic over $\mathbb{Q}$ is an algebraic number. A transcendental number is an element of $\mathbb{C}$ that is transcendental over $\mathbb{Q}$.
+
+\paragraph{Thm.} Let $E$ be an extension field of a field $F$ and let $\alpha \in E$. Let $\phi_\alpha: F[x] \to E$ be the evaluation homomorphism of $F[x]$ into $E$ such that $\phi_\alpha(a) = a$ for $a \in F$ and $\phi_\alpha(x) = \alpha$. Then $\alpha$ is transcendental over $F$ if and only if $\phi_\alpha$ gives an isomorphism of $F[x]$ with a subdomain of $E$, that is, if and only if $\phi_\alpha$ is a 1-1 map.
+
+\paragraph{Note:} This theorem basically says that a number is transcendental over a field if and only if the number can be plugged into every polynomial and only be zero when the number itself is zero.
+
 
 
 \end{document}
