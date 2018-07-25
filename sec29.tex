@@ -48,6 +48,24 @@ You may recognize the field $\mathbb{R}[x]/\langle x^2+1 \rangle$ as $\mathbb{C}
 
 \paragraph{Note:} This theorem basically says that a number is transcendental over a field if and only if the number can be plugged into every polynomial and only be zero when the number itself is zero.
 
+\paragraph{Thm.} Let $E$ be an extension field of $F$ , and let $\alpha \in E$, where $\alpha$ is algebraic over $F$. Then there is an irreducible polynomial $p(x) \in F[x]$ such that $p(\alpha) = 0$. This irreducible polynomial $p(x)$ is uniquely determined up to a constant factor in $F$ and is a polynomial of minimal degree $ \geq 1$ in $F[x]$ having $\alpha$ as a zero. If $f(\alpha) =0$ for $f(x) \in F[x]$, with $f(x) \neq 0 $, then $p(x)$ divides $f(x)$.
 
+\paragraph{Note:} This theorem says that all polynomials with a certain root are constructed from a base irreducible polynomial. For example, $x^2 -8x + 15$ is constructed from $x-3$ and $x-5$.
+
+\paragraph{Def:} A \textit{monic} polynomial is a polynomial where the coefficient of the highest power of $x$ is 1.
+
+\paragraph{Def:} Let $E$ be an extension field of a field $F$, and let $\alpha \in E$ be algebraic over $F$. The unique monic polynomial $p(x)$ having the proprty from the last theorem is the \textit{irreducible polynomial} for $\alpha$ over $F$. and is denoted by $irr(\alpha, F)$. The degree of $irr(\alpha, F)$ is the \textit{degree} of $\alpha$ over $F$, denoted $deg(\alpha, F)$.
+
+\paragraph{Note:} An element that is transcendental over a field behaves as though it were an indeterminate over the field. 
+
+\paragraph{Def:} An extension field $E$ of a field $F$ is a \textit{simple extension} of $F$ if $E = F(\alpha)$ for some $\alpha \in E$, and where $F(\alpha)$ is the smallest subfield of $E$ containing both $F$ and $\alpha$.
+
+\paragraph{Thm.} Let $E$ be a simple extension $F(\alpha)$ of a field $F$, and let $\alpha$ be algebraic over $F$. Let the degree of $irr(\alpha, F)$ be $n \geq 1$. Then every element $\beta$ of $E = F(\alpha)$ can be uniquely expressed in the form
+$$ \beta = b_0 +b_1\alpha + \dots + b_{n-1}a^{n-1}$$
+where the $b_i$ are in $F$.
+
+\paragraph{Note:} This theorem states that every element of the simple extension $F(\alpha)$ is a polynomial in $\alpha$.
+
+\paragraph{Constructing the Complex Numbers:} Recall that $\mathbb{R}[x]/\langle x^2 +1 \rangle $ is an extension field of $\mathbb{R}$. If $\alpha = x + \langle x^2 +1 \rangle$, then $\mathbb{R}(\alpha) = \mathbb{R}[x]/ \langle x^2 +1 \rangle$. By the last theorem, we know that all elements of this field must be of the form $a+b\alpha$ for $a,b \in \mathbb{R}$. But we also know that $\alpha$ is the root of $x^2+1$, i.e. $\alpha^2 + 1 = 0$. Another may to say this is $\alpha = \sqrt{-1}$, which means that $\alpha = i$.
 
 \end{document}
