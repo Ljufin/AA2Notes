@@ -54,7 +54,7 @@ You may recognize the field $\mathbb{R}[x]/\langle x^2+1 \rangle$ as $\mathbb{C}
 
 \paragraph{Def:} A \textit{monic} polynomial is a polynomial where the coefficient of the highest power of $x$ is 1.
 
-\paragraph{Def:} Let $E$ be an extension field of a field $F$, and let $\alpha \in E$ be algebraic over $F$. The unique monic polynomial $p(x)$ having the proprty from the last theorem is the \textit{irreducible polynomial} for $\alpha$ over $F$. and is denoted by $irr(\alpha, F)$. The degree of $irr(\alpha, F)$ is the \textit{degree} of $\alpha$ over $F$, denoted $deg(\alpha, F)$.
+\paragraph{Def:} Let $E$ be an extension field of a field $F$, and let $\alpha \in E$ be algebraic over $F$. The unique monic polynomial $p(x)$ having the property from the last theorem is the \textit{irreducible polynomial} for $\alpha$ over $F$. and is denoted by $irr(\alpha, F)$. The degree of $irr(\alpha, F)$ is the \textit{degree} of $\alpha$ over $F$, denoted $deg(\alpha, F)$.
 
 \paragraph{Note:} An element that is transcendental over a field behaves as though it were an indeterminate over the field. 
 
@@ -72,7 +72,24 @@ where the $b_i$ are in $F$.
 
 \paragraph{27.} Let $E$ be an extension field of a field $F$ and let $\alpha \in E$ be algebraic over $F$. The polynomial $irr(\alpha, F)$ is sometimes referred to as the \textit{minimal polynomial} for $\alpha$ over $F$. Why is this designation appropriate?
 
+\begin{flushleft}
+\textit{Answers:}\\
+ The name is fitting because it is the simplest polynomial that has $\alpha$ as a root.
+\end{flushleft}
+
 \paragraph{29.} Let $E$ be an extension field of $F$, and let $\alpha, \beta \in E$. Suppose $\alpha$ is transcendental over $F$, but algebraic over $F(\beta)$. Show that $\beta$ is algebraic over $F(\alpha)$.
+
+\begin{flushleft}
+\textit{Proof:}\\
+Goal: $f(\beta) = 0$ for some nonzero $f \in F(\alpha)[x]$.\\
+Given: $f(\alpha) =0 $ for $f(x) \in F[x]$ iff $\alpha = 0$, $f(\alpha) = 0$ for some $f(x) \in F(\beta)[x]$.\\
+We can write an element of $F(\beta)[x]$ as $p(x) = a_0 + a_1x + \dots + a_nx^n$ where each $a_i \in F(\beta)$ has the form $a_i = \frac{f(\beta)}{g(\beta)}$ where $f(x), g(x) \in F[x]$. \\
+Therefore, $p(x) = \frac{f_0(\beta)}{g_0(\beta)} + \frac{f_1(\beta)}{g_1(\beta)}x + \dots + \frac{f_n(\beta)}{g_n(\beta)}x^n$.\\
+Since we know that $\alpha$ is algebraic over $F(\beta)$, $$p(\alpha) = \frac{f_0(\beta)}{g_0(\beta)} + \frac{f_1(\beta)}{g_1(\beta)}\alpha + \dots + \frac{f_n(\beta)}{g_n(\beta)}\alpha^n = 0$$
+Multiply both sides by $\Pi_{i=0}^n g_i(\beta)$
+$$ f_0(\beta) + f_1(\beta)\alpha + \dots + f_n(\beta)\alpha^n = 0$$
+We can rewrite this polynomial in $\alpha$ as a polynomial with coefficients in $F(\alpha)$, therefore $\beta$ is algebraic over $F(\alpha)$. $\blacksquare$
+\end{flushleft}
 
 \paragraph{30.} Let $E$ be an extension field of a finite field $F$, where $F$ has $q$ elements. Let $\alpha \in E$ be algebraic over $F$ of degree $N$. Prove that $F(\alpha)$ has $q^n$ elements.
 
