@@ -20,4 +20,38 @@
 
 The elements of $V$ are \textit{vectors} and the elements of $F$ are scalars.
 
+\paragraph{Note:} Let $E$ be an extension field over a field $F$. Then $E$ is vector space over $F$ with the usual addition in $E$ and scalar multiplication is the usual multiplication $\alpha a \in E$ where $\alpha \in E$ and $a \in F$.
+
+\paragraph{Thm.} If $V$ is a vector space over $F$, then $0\alpha = 0, a0 =0$ and $(-a)\alpha=a(-\alpha) = -(a\alpha)$ for all $ a \in F$ and $\alpha \in V$.
+
+\paragraph{Def:} Let $V$ be a vector space over $F$. The vectors in the subset $S = \{ \alpha_i | i\in I\}$ of $V$ \textit{span} $V$ if for every $\beta \in V$, we have 
+$$ \beta = a_1\alpha_{i_1}+a_2\alpha_{i_2}+\dots + a_n\alpha_{i_n}$$
+for some $a_j \in F$ and $\alpha_{i_j} \in S, j= 1, \dots, n$. A vector $\sum_{j=1}^n a_j\alpha_{i_j}$ is a \textit{linear combination} of the $\alpha_{i_j}$.
+
+\paragraph{Example:}  Let $F$ be a field and $E$ an extension field of $F$. Let $\alpha \in E$ be algebraic over $F$. Then $F(\alpha)$ is a vector space over $F$ and is spanned by vectors of of the form $a_0+a_1\alpha+ \dots+ a_{n-1}\alpha^{n-1}$, where $n=deg(\alpha, F)$.
+
+\paragraph{Def:} A vector space $V$ over a field $F$ is \textit{finite dimensional} if there is a finite subset of $V$ whose vectors span $V$.
+
+\paragraph{Example:} If $F \leq E$ and $\alpha \in E$ is algebraic over $F$, $F(\alpha)$ is a finite dimensional vector space over $F$. This happens because the degree of the irreducible polynomial of $\alpha$ is finite and therefore the spanning vector will have that number of components.
+
+\paragraph{Def:} The vectors in the subset $S = \{ \alpha_i | i\in I\}$ of a vector space $V$ over a field $F$ are \textit{linearly independent} over $F$ if, for any distinct vectors $\alpha_{i_j} \in S$, coefficients $a_j \in F$ and $n \in \mathbb{Z}^+$, we have $\sum_{j=1}^n a_j \alpha_{i_j} = 0$ in $V$ only if $a_j =0$ for $j= 1,\dots,n$. If the vectors are not linearly independent, they are \textit{linearly dependent}.
+
+\paragraph{Note:} Another way to think of linear independence is that there is only way to represent the 0 vector. Also, if the vectors are linearly dependent, one will be a linear combination of the remaining vectors.
+
+\paragraph{Example:} Back to the $F(\alpha)$ case in previous examples, the vectors look like $v =a_0+a_1\alpha, \dots, a_{n-1}\alpha^{n-1}$. Setting $v=0$,
+$$0 = a_0+a_1\alpha+ \dots+ a_{n-1}\alpha^{n-1} = 0+0\alpha+ \dots+ 0\alpha^{n-1}$$
+Therefore, the $\alpha$'s are linearly independent.
+
+\paragraph{Def:} If $V$ is a vector space over a field $F$, the vectors in a subset $B = \{ \beta_i | i \in I \}$ of $V$ form a \textit{basis} for $V$ over $F$ if they span $V$ and are linearly independent.
+
+\paragraph{Lemma:} Let $V$ be a vector space over a field $F$, and let $\alpha \in V$. If $\alpha$ is a linear combination of vectors $\beta_i$ in $V$ for $i=1,\dots,m$ and each $\beta_i$ is a linear combination of vectors $\gamma_j$ in $V$ for $j=1,\dots,n$, then $\alpha$ is a linear combination of the $\gamma_i$.
+
+\paragraph{Thm.} In a finite dimensional vector space, every finite set of vectors spanning the space contains a subset that is a basis.
+
+\paragraph{Note:} This theorem means that we can always generate a finite dimensional vector space from a finite number of basis vectors. (whoops, got ahead of the text)
+
+\paragraph{Corollary:} A finite dimensional vector space has a finite basis.
+
+\paragraph{Thm.} Let $S = \{\alpha_1,\dots,\alpha_r\}$ be a finite set of linearly independent vectors of a finite dimensional vector space $V$ over a field $F$. Then $S$ can be enlarged to a basis for $V$ over $F$. Furthermore, if $B = \{\beta_1, \dots, \beta_n\}$ is any basis for $V$ over $F$, then $r \leq n$.
+
 \end{document}
