@@ -5,5 +5,33 @@
 \usepackage{amssymb}
 \begin{document}
 
+\begin{center}
+\textbf{Algebraic Extensions}
+\end{center}
+
+\paragraph{Def:} An extension field $E$ of a field $F$ is an \textit{algebraic extension} of $F$ if very element if algebraic over $F$.
+
+\paragraph{Def:} If an extension field $E$ of a field $F$ is of finite dimension $n$ as a vector space over $F$, then $E$ is a \textit{finite extension} of degree $n$ over $F$. We shall denote $[E:F]$ to be the degree $n$ of $E$ over $F$.
+
+\paragraph{Note:} $[E:F] = 1$ if and only if $E=F$.
+
+\paragraph{Thm.} A finite extension field $E$ of a field $F$ is an algebraic extension of $F$.
+
+\paragraph{Thm.}  If $E$ is a finite extension field of a field $F$, and $K$ is a finite extension field of $E$, then $K$ is a finite extension of $F$, and 
+$$ [K:F] = [K:E][E:F]$$
+
+\paragraph{Note:} If if $\{ \alpha_i | i = 1,\dots,n\}$ is a basis for $E$ over $F$ and $\{ \beta_j | j=1,\dots,m\}$ is a basis for $K$ over $E$, then the set $\{\alpha_i\beta_i\}$ of $mn$ products is a basis for $K$ over $F$.
+
+\paragraph{Corollary:} If $F_i$ is a field for $i=1,\dots,r$ and $F_{i+1}$ is a finite extension of $F_i$, then $F_r$ is a finite extension of $F_1$, and
+$$ [F_r:F_1] = [F_r:F_{r-1}][F_{r-1}:F_{r-2}]\dots[F_2:F_1]$$
+
+\paragraph{Corollary:} If $E$ is an extension field of $F$, $\alpha \in E$ is algebraic over $F$, and $\beta \in F(\alpha)$, then $deg(\beta, F)$ divides $deg(\alpha, F)$.
+
+\paragraph{Notation:} We denote the adjoining of $\alpha_2$ to $F(\alpha_1)$, i.e. $(F(\alpha_1))(\alpha_2)$, as $F(\alpha_1, \alpha_2)$.
+
+\paragraph{Thm.} Let $E$ be an algebraic extension of a field $F$. Then there exist a finite number of elements $\alpha_1, \dots, \alpha_n$ in $E$ such that $E = F(\alpha_1, \dots, \alpha_n)$ if and only if $E$ is a finite dimensional vector space over $F$, that is, if and only if $E$ is a finite extension of $F$.
+
+\paragraph{Thm.} Let $E$ be an extension field of $F$. Then 
+$$ \bar{F}_E = \{ \alpha$$
 
 \end{document}
