@@ -49,4 +49,25 @@ is a subfield of $E$ called the \textit{algebraic closure} of $F$ in $E$.
 
 \paragraph{Fundamental Theorem of Algebra:} The field $\mathbb{C}$ of complex numbers is an algebraically closed field.
 
+\paragraph{Def:} A \textit{partial ordering} of a set $S$ is given by a relation $\leq$ defined for certain ordered pairs of elements of $S$ such that the following conditions are satisfied:
+\begin{enumerate}
+\item $a \leq a$ for all $a \in S$.
+\item If $a \leq b$ and $b \leq a$, then $a=b$.
+\item If $a \leq b$ and $b \leq c$, then $a \leq c$.
+\end{enumerate}
+
+\paragraph{Note:} In a partially ordered set, not all elements need to be comparable.
+
+\paragraph{Def:} A subset $T$ of a a partially ordered set $S$ is a \textit{chain} if every two elements in $T$ are comparable.
+
+\paragraph{Def:} An element of a set $u \in S$ is an \textit{upper bound} if $ s \leq u$ for all $s \in S$.
+
+\paragraph{Def:} An element $m$ of a set $S$ is \textit{maximal} if there is no $s \in S$ such that $m < s$.
+
+\paragraph{Zorn's Lemma} If $S$ is a partially ordered set such that every chain in $S$ has an upper bound in $S$, then $S$ has at least one maximal element.
+
+\paragraph{Note:} Zorn's Lemma is equivalent to the Axiom of Choice.
+
+\paragraph{Note:} We can use Zorn's Lemma to show that every field has an algebraic closure. We do this by making chains of bigger and bigger extensions of a field until we hit an extension that contains every possible algebraic extension of $F$. The application of Zorn's Lemma tells us that there is a maximal algebraic extension $\bar{F}$. Since this is a maximal element in terms of Zorn's Lemma, there is no way to go any further and make an algebraic extension of $\bar{F}$. 
+
 \end{document}
