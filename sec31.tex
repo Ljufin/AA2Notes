@@ -9,7 +9,7 @@
 \textbf{Algebraic Extensions}
 \end{center}
 
-\paragraph{Def:} An extension field $E$ of a field $F$ is an \textit{algebraic extension} of $F$ if very element if algebraic over $F$.
+\paragraph{Def:} An extension field $E$ of a field $F$ is an \textit{algebraic extension} of $F$ if very element is algebraic over $F$.
 
 \paragraph{Def:} If an extension field $E$ of a field $F$ is of finite dimension $n$ as a vector space over $F$, then $E$ is a \textit{finite extension} of degree $n$ over $F$. We shall denote $[E:F]$ to be the degree $n$ of $E$ over $F$.
 
@@ -31,7 +31,22 @@ $$ [F_r:F_1] = [F_r:F_{r-1}][F_{r-1}:F_{r-2}]\dots[F_2:F_1]$$
 
 \paragraph{Thm.} Let $E$ be an algebraic extension of a field $F$. Then there exist a finite number of elements $\alpha_1, \dots, \alpha_n$ in $E$ such that $E = F(\alpha_1, \dots, \alpha_n)$ if and only if $E$ is a finite dimensional vector space over $F$, that is, if and only if $E$ is a finite extension of $F$.
 
+\paragraph{Note:} A previous theorem stated that an finite extension of field is always an algebraic extension of the field. This last theorem basically says that not all algebraic extensions need to be finite, but when a finite number of elements of the extension can be adjoined to the original field to get the extension field, then the extension is finite.
+
 \paragraph{Thm.} Let $E$ be an extension field of $F$. Then 
-$$ \bar{F}_E = \{ \alpha$$
+$$ \bar{F}_E = \{ \alpha | \alpha \text{ is algebraic over } F \}$$ 
+is a subfield of $E$ called the \textit{algebraic closure} of $F$ in $E$.
+
+\paragraph{Corollary:} The set of all algebraic numbers forms a field. 
+
+\paragraph{Def:} A field $F$ is \textit{algebraically closed} if every nonconstant polynomial in $F[x]$ has a zero in $F$.
+
+\paragraph{Thm.} A field $F$ is algebraically closed if and only if every nonconstant polynomial in $F[x]$ factors in $F[x]$ into linear factors or is a linear factor itself.
+
+\paragraph{Corollary:} An algebraically closed field $F$ has no proper algebraic extensions, that is, $F$ itself is its only algebraic extension.
+
+\paragraph{Thm.} Every field $F$ has an \textit{algebraic closure}, that is, an algebraic extension $\bar{F}$ that is algebraically closed.
+
+\paragraph{Fundamental Theorem of Algebra:} The field $\mathbb{C}$ of complex numbers is an algebraically closed field.
 
 \end{document}
