@@ -12,10 +12,39 @@
 \paragraph{Def:} Let $X$ be a set and $G$ a group. An \textit{action} of $G$ on $X$ is a map $*: G \times X \to X$ such that
 \begin{enumerate}
 \item $ex = x$ for all $x \in X$.
-\item $(g_1g_2)(x) = g_1(g_2x)$ for all $x in X$ and all $g_1, g_2 \in G$.
+\item $(g_1g_2)(x) = g_1(g_2x)$ for all $x \in X$ and all $g_1, g_2 \in G$.
 \end{enumerate}
 Under these conditions, $X$ is a $G$-\textit{set}.
 
-\paragraph{Orbit Equation:} The major results in this section come from counting the number of  G-sets.
+\paragraph{Orbit Equation:} The major results in this section come from counting the number of  elements in a finite G-set. We can get the size of the set $X$ with the equation
+$$ |X| = |X_G| + \sum_{i=s+1}^r |Gx_i|$$
+where $X_G = \{ x \in X | gx = x, \forall g \in G\}$ is the union of the one-element orbits in $X$ and the $Gx_i$'s are the orbits with more than one element.
+
+\paragraph{Thm.} Let $G$ be a group of order $p^n$ and let $X$ be a finite $G$-set. Then $|X| \equiv |X_g| \mod p$.
+
+\paragraph{Def:} Let $p$ be a prime. A group $G$ is a $p$-\textit{group} if every element in $G$ has order a power of the prime $p$. A subgroup of a group $G$ is a $p$-\textit{subgroup} of $G$ if the subgroup is itself a $p$-group.
+
+\paragraph{Cauchy's Theorem:} Let $p$ be a prime. Let $G$ be a finite group and let $p$ divide $|G|$. Then $G$ has an element of order $p$ and, consequently, a subgroup of order $p$.
+
+\paragraph{Corollary:} Let $G$ be a finite group. Then $G$ is a $p$-group if and only if $|G|$ is a power of $p$.
+
+\paragraph{Def:} The subgroup $G_H = \{ g \in G | gHg^{-1} = H \}$  where $H$ is a subgroup of $G$ is the \textit{normalizer} of $H$ in $G$ and will be denoted $N[H]$.
+
+\paragraph{Lemma:} Let $H$ be a $p$-subgroup of a finite group $G$. Then
+$$ (N[H]:H) \equiv (G:H)\mod p$$
+
+\paragraph{Corollary:} Let $H$ be a $p$ subgroup of a finite group $G$. If $p$ divides $(G:H)$, then $N[H] \neq H$.
+
+\paragraph{First Sylow Theorem:} Let $G$ be a finite group and let $|G| = p^nm$ where $m \geq 1$ and where $p$ does not divide $m$, then
+\begin{enumerate}
+\item $G$ contains a subgroup of order $p^i$ for each $i$ where $1 \leq i \leq n$.
+\item Every subgroup $H$ of $G$ of order $p^i$ is a normal subgroup of a subgroup of order $p^{i+1}$ for $1 \leq i < n$.
+\end{enumerate}
+
+\paragraph{Def:} A \textit{Sylow p-subgroup} of a group $G$ is a maximal $p$-subgroup of $G$, that is,  a $p$-subgroup contained in no larger $p$-subgroup.
+
+\paragraph{Second Sylow Theorem:} Let $P_1$ and $P_2$ be Sylow $p$-subgroups of a finite group $G$. Then $P_1$ and $P_2$ are conjugate subgroups of $G$.
+
+\paragraph{Third Sylow Theorem:} If $G$ is a finite group and $p$ divides $|G|$, then the number of Sylow $p$-groups is congruent to 1 modulo $p$ and divides $|G|$.
 
 \end{document}
