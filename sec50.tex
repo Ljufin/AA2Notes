@@ -5,5 +5,23 @@
 \usepackage{amssymb}
 \begin{document}
 
+\begin{center}
+\textbf{Section 50: Splitting Fields}
+\end{center}
+
+\paragraph{Intro:} If an algebraic extension $E$ of a filed $F$ is such that all its isomorphic mappings onto a subfield $\bar{F}$ leaving $F$ fixed are actually automorphisms of $E$, then for every $\alpha \in E$, all conjugates of $\alpha$ over $F$ must be in $E$ also.
+
+\paragraph{Def:} Let $F$ be a field with algebraic closure $\bar{F}$. Let $\{ f_i(x) | i \in I \}$ be a collection of polynomials in $F[x]$. A field $E \leq \bar{F}$ is the \textit{splitting field} of $\{ f_i(x) | i \in I \}$ over $F$ if $E$ is the smallest subfield of $\bar{F}$ containing $F$ and all the zeros in $\bar{F}$ of each of the $f_i(x)$. A field $K \leq \bar{F}$ is a \textit{splitting field over} $F$ if it is the splitting field of some set of polynomials in $F[x]$.
+
+\paragraph{Thm.} A field $E$, where $F \leq E \leq \bar{F}$, is a splitting field over $F$ if and only if every automorphism of $\bar{F}$ leaving $F$ fixed maps $E$ onto itself and thus induces an automorphism of $E$ leaving $E$ fixed.
+
+\paragraph{Def:} Let $E$ be an extension field of a field $F$. A polynomial $f(x) \in F[x]$ \textit{splits} in $E$ if it factors into a polynomial of linear factors in $E[x]$.
+
+\paragraph{Corollary:} If $E \leq \bar{F}$ is a splitting field over $F$, then every irreducible polynomial in $F[x]$ having a zero in $E$ splits in $E$.
+
+\paragraph{Corollary:} If $E \leq \bar{F}$ is a splitting field over $F$, then every isomorphic mapping of $E$ onto a subfield of $\bar{F}$ and leaving $F$ fixed is actually an automorphism of $E$. In particular, if $E$ is a splitting field of finite degree over $F$, then
+$$ \{E:F\} = |G(E/F)|$$
+
+
 
 \end{document}
