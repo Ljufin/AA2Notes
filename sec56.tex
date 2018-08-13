@@ -5,5 +5,24 @@
 \usepackage{amssymb}
 \begin{document}
 
+\begin{center}
+\textbf{Section 56: Insolvability of the Quintic}
+\end{center}
+
+\paragraph{Def:} An extension $K$ of a field $F$ is an \textit{extension of F by radicals} if there are elements $\alpha_1, \dots, \alpha_r \in K$ and positive integers $n_1, \dots, n_r$ such that $K=F(\alpha_1, \dots, \alpha_r)$, $\alpha_1^{n_1} \in F$ and $a_i^{n_i} \in F(\alpha_1, \dots, a_{i-1})$ for $1 < i \leq r$. A polynomial $f(x) \in F[x]$ is \textit{solvable by radicals} over $F$ if the splitting field $E$ of $f(x)$ over $F$ is contained in an extension of $F$ by radicals.
+
+\paragraph{Note:} Essentially, a polynomial is solvable by radicals if we can obtain every zero by a finite sequence of addition, subtract, multiplication,division, and taking roots.
+
+\paragraph{Note:} The insolvability of the Quintic means that there is no general formula for the roots using radicals. That doesn't mean that all 5th degree polynomials have roots inexpressible by radicals. Take for example, the polynomial $x^5-2$, which has $\sqrt[5]{2}$ as a root. Insolvability means that there are 5th degree polynomials out there that cannot be solved with roots.
+
+\paragraph{Lemma:} Let $F$ be a field of characteristic 0, and let $a \in F$. If $K$ is the splitting field of $x^n-a$ over $F$, then $G(K/F)$ is a solvable group.
+
+\paragraph{Thm.} Let $F$ be a field of characteristic zero, and let $F \leq E \leq K \leq \bar{F}$, where $E$ is a normal extension of $F$ and $K$ is an extension of $F$ by radicals. Then $G(E/F)$ is a solvable group.
+
+\paragraph{Def:} Let $y_1 \in \mathbb{R}$ be transcendental over $\mathbb{Q}$, $y_2 \in\mathbb{R}$ be transcendental over $\mathbb{Q}(y_1)$, and so on, until we get $y_5 \in \mathbb{R}$ transcendental over $\mathbb{Q}(y_1, \dots, y_4)$. Transcendentals found in this fashion are \textit{independent transcendental elements} over $\mathbb{Q}$.
+
+\paragraph{Thm.} Let $y_1, \dots, y_5$ be independent transcendental real numbers over $\mathbb{Q}$. The polynomial
+$$ f(x) = \prod_{i=1}^5(x-y_i)$$
+is not solvable by radicals over $F=\mathbb{Q}(s_1, \dots, s_5)$, where $s_i$ is the $i$th elementary symmetric function in $y_1, \dots, y_5$.
 
 \end{document}
